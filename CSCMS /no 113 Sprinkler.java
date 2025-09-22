@@ -33,3 +33,6 @@ public class Main {
         System.out.print(max);
     }
 }   
+
+
+![image alt](https://github.com/Feychas/Codingan/blob/0914447b19f9246510eaa37c6b17e0225c000b42/CSCMS%20pict/No%20113%20logic.jpg)
