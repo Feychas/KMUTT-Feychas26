@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Maxixi {
+public class MaxMulMax {
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
         
