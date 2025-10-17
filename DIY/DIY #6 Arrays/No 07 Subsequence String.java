@@ -24,3 +24,17 @@ public class Xoxo {
         
     }
 }
+
+/* ALTERMATIVE - no array
+    int i = 0; // pointer for s
+    int j = 0; // pointer for t
+
+    while (i < s.length() && j < t.length()) {
+          if (s.charAt(i) == t.charAt(j)) {
+              i++;
+          }
+             j++;
+          }
+
+        System.out.println(i == s.length());
+*/
