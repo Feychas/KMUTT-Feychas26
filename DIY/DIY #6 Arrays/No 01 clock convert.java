@@ -17,6 +17,7 @@ public class TimeTravel {
             }
         }
         System.out.printf("%02d:%02d", h, m); //sistem printf
+        //Another way to write it = System.out.print(String.format("%02d:%02d", h, m))
         //format, ("format", var);
         //% placeholder buat nilai yg digantikan (krn kt pny 2 variabel, 1 for each)
         //d for angka decimals
@@ -25,3 +26,11 @@ public class TimeTravel {
         //: the string krn termasuk format yg kt mau
     }
     }
+
+/* ANOTHER, condition jadi 1 line, ga 2 if
+     if (t.equals("pm") && hour != 12) {
+            hour += 12;
+        } else if (t.equals("am") && hour == 12) {
+            hour = 0;
+        }
+*/
