@@ -1,58 +1,42 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class RibetCak {
+public class Datasing {
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
         
         int n = x.nextInt();
         int m = x.nextInt();
-        int[][] numsmat = new int[n][m];
-        //biar ga usah buat loop i j tiap kali
-        int y = n*m;
-        int[] nums = new int[y];
+        int leng = n*m;
+        int[] nums = new int[leng];
+        //langsung buat as 1D array ja gpp toh ga butuh ngeprint bentuk matrix
         
-        int p = 0; //pointer buat input flat matrix
-        for (int i = 0 ; i < n ; i++) {
-            for (int j = 0 ; j < m ; j++) {
-                numsmat[i][j] = x.nextInt();
-                nums[p] = numsmat[i][j];
-                p++;
-            }
-        }
+        int sum = 0, min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        double avg, median;
         
-        //sum
-        int sum = 0;
-        for (int i = 0 ; i < y ; i++) {
+        for (int i = 0 ; i < leng ; i++) {
+            nums[i] = x.nextInt();
             sum += nums[i];
-        } System.out.println("Sum: " + sum);
-        
-        //minmax value
-        int max = nums[0];
-        int min = nums[0];
-        for (int i = 0 ; i < y ; i++) {
-            if (nums[i] > max) {
-                max = nums[i];
-            }
-            if (nums[i] < min) {
+            if (min > nums[i]) {
                 min = nums[i];
             }
+            if (max < nums[i]) {
+                max = nums[i];
+            }
         }
+        
+        avg = (double) sum/(leng);
+        Arrays.sort(nums);
+        if (leng % 2 == 1) {
+            median = nums[leng/2];
+        } else {
+            median = (nums[leng/2] + nums[(leng/2)-1]) / 2.0;
+        }
+        
+        System.out.println("Sum: " + sum);
         System.out.println("Minimum value: " + min);
         System.out.println("Maximum value: " + max);
-        
-        //average
-        double avg = (double) sum / y;
-        System.out.println("Average value: " + avg); //add (double) buat change format
-        
-        //median
-        Arrays.sort(nums);
-        double med;
-        if (nums.length % 2 == 0) { //kalau even lsg equation
-            med = (nums[nums.length/2 - 1] + nums[nums.length/2]) / 2.0; //atau pakai y-1
-        } else {
-            med = nums[nums.length/2];
-        }
-        System.out.println("Median value: " + med);
+        System.out.println("Average value: " + avg);
+        System.out.println("Median value: " + median);
         
     }
 }
