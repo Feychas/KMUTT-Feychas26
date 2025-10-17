@@ -25,3 +25,20 @@ public class  Strok {
         }
     }
 }
+
+/* ALTERNATIVE (langsung loop di input)
+    for (int i = 0; i < n; i++) {
+        String word = sc.next();
+        String lowerPart = "";
+        String upperPart = "";
+
+        // Loop through each character
+        for (int j = 0; j < word.length(); j++) {
+             char ch = word.charAt(j);
+             if (j % 2 == 0) {
+                upperPart += Character.toUpperCase(ch); // even index -> uppercase
+            } else {
+                 lowerPart += Character.toLowerCase(ch); // odd index -> lowercase
+                }
+            }
+*/
