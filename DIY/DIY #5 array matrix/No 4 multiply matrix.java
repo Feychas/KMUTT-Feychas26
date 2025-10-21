@@ -28,3 +28,19 @@ public class MaxMulMax {
         } //langsung print, mff malas
     }
 }
+
+/* ALTERNATIF GA PAKAI NEW ARRAY RESS, PAKAI YANG ADA + LANGSUNG PRINT
+        double sum = 0;
+        double product = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    product = m1[i][k] * m2[k][j];
+                    sum += product;
+                }
+                System.out.print(sum + " ");
+                sum = 0;
+            }
+            System.out.println();
+        }
+*/
