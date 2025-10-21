@@ -31,7 +31,7 @@ public class MaxMulMax {
 
 /* ALTERNATIF GA PAKAI NEW ARRAY RESS, PAKAI YANG ADA + LANGSUNG PRINT
         double sum = 0;
-        double product = 1;
+        double product = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < n; k++) {
