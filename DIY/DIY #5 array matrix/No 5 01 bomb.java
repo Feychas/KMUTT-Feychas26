@@ -44,3 +44,31 @@ public class DorDor {
         }
     }
 }
+
+/* INSTEAF OF 999 dan harus ngubah banyak condition, use boolean 
+        boolean[] rowZ = new boolean[r];
+        boolean[] colZ = new boolean[c];
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (nums[i][j] == 0) {
+                    rowZ[i] = true;
+                    colZ[j] = true;
+                }
+            }
+        }
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (rowZ[i] || colZ[j])
+                    nums[i][j] = 0;
+            }
+        }
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+*/
