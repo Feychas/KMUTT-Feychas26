@@ -34,5 +34,5 @@ public class Main {
     }
 }   
 
-![Image Alt](First Semester/CSCMS /CSCMS 113.jpg)
+![Image Alt](https://github.com/Feychas/Codingan/blob/11259bfeb071194a7bf3a663fb671428f6091135/First%20Semester/CSCMS%20/CSCMS%20113.jpg)
 
